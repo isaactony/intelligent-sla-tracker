@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "django_celery_beat",
+    "ingestion",
+    
 ]
 CELERY_BROKER_URL = 'redis://redis:6379/0'
 
