@@ -7,6 +7,9 @@ class TicketEvent(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
+        """
+        Return a human-readable string combining the ticket ID and event type for this TicketEvent instance.
+        """
         return f"{self.ticket_id} - {self.event_type}"
 
     class Meta:
